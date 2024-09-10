@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <script>
+      //creating a class  
+      class Car {
+        //constructor
+        constructor(name) {
+          this.brand = name;
+        }
+
+        //class method
+        present() {
+          return "I have a " + this.brand;
+        }
+      }
+
+      //Inherting class Car to class Model
+      class Model extends Car {
+        constructor(name, mod) {
+          //calling parent constructor
+          super(name);
+          this.model = mod;
+        }
+        show() {
+          return this.present() + ", it is a " + this.model;
+        }
+      }
+
+      const mycar = new Car("Ford");
+      const mycar1 = new Model("Ford", "Mustang");
+
+      // document.write(mycar.brand);
+      //document.write(mycar.present());
+      document.write(mycar1.show())
+    </script>
+  </body>
+</html>
