@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
 
 function Header(){
-  return <h1 style={{color:"red"}}>Hello World!</h1>
+  return <h1 style={{color:"red",backgroundColor:"yellow",padding:"20px",fontfamily:"Sans-Serif"}}>Hello World!</h1>
 }
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
