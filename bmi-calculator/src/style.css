@@ -1,0 +1,35 @@
+body{
+    width:100vw;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.App{
+    width:450px;
+    height:350px;
+    border:5px double blue;
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+h1,h3{
+    color:red;
+}
+.calculate-button{
+    background-color: green;
+    color:white;
+    font-weight:bold;
+}
+.reset-button{
+    background-color: red;
+    color:white;
+    font-weight:bold;
+}
+button:hover{
+    scale:1.1
+}
+input{
+    border:1px solid yellow;
+}
