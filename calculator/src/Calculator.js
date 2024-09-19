@@ -26,12 +26,12 @@ function Calculator() {
   return (
     <div className="calculator">
       <div className="display">
-        <input type="text" value={input} />
+        <input type="text" value={input} readonly />
       </div>
       <div className="keypad">
         <div className="clear-btns">
         <button onClick={clear} className="clear-all">AC</button><br/>
-        <button className="claer">C</button>
+        <button className="clear">C</button>
         </div>
         <button onClick={() => handleClick("7")}>7</button>
         <button onClick={() => handleClick("8")}>8</button>
