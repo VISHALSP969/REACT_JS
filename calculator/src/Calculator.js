@@ -6,7 +6,11 @@ function Calculator() {
 
   //Function to handle input when a button is clicked
   const handleClick = (value) => {
-    setInput(input + value);
+    if(input==="Error"){
+      setInput(value);
+    } else {
+      setInput(input + value);
+    }
   };
 
   //Function to calculate the result
@@ -23,6 +27,11 @@ function Calculator() {
     setInput("");
   };
 
+  //Function to handle backspace
+  const handleBackspace=()=>{
+    setInput(input.slice(0,-1));
+  }
+
   return (
     <div className="calculator">
       <div className="display">
@@ -31,7 +40,7 @@ function Calculator() {
       <div className="keypad">
         <div className="clear-btns">
         <button onClick={clear} className="clear-all">AC</button><br/>
-        <button className="clear">C</button>
+        <button onClick={handleBackspace} className="clear">C</button>
         </div>
         <button onClick={() => handleClick("7")}>7</button>
         <button onClick={() => handleClick("8")}>8</button>
