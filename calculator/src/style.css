@@ -28,10 +28,12 @@ button{
     width:40px;
     height:40px;
     margin:5px;
-    border:2px solid lightcoral;
+    border:3px double lightcoral;
     border-radius: 5px;
-    background-color: lightgray;
+    background-color: gray;
     font-weight:bold;
+    font-size:15px;
+    color:white;
 }
 button:hover{
     scale: 1.1;
@@ -42,7 +44,12 @@ button:hover{
     padding: 0px 15px;
 }
 .clear-all , .clear{
-    background-color: red;
-    color:white;
+    background-color: darkred;
     font-weight: bold;
+}
+.equal{
+    background-color: blue;
+}
+.operator{
+    background-color: orangered;
 }
